@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/69a195f5ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              sora: ["Sora", "sans-serif"],
+              adlam: ["ADLaM Display", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Browse 4 Pet</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- navbar -->
+      <nav class="h-25">
+        <div class="navbar bg-base-100 shadow-sm bg-[#FFF9F4]">
+          <div class="flex items-center md:mx-auto">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <img
+              class="md:w-12 md:h-12 mr-2 w-8 h-8"
+              src="./Resources/assets/logo-header.png"
+              alt=""
+            />
+            <a class="text-2xl md:text-xl font-sora"
+              >Browse<span class="text-[#FFDC26]">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="flex items-center mx-auto gap-2">
+            <i class="hidden md:block fa-solid fa-bell"></i>
+            <i class="hidden md:block fa-brands fa-searchengin"></i>
+            <a
+              class="hidden md:block font-sora btn border-2 border-[#FFDC26] w-19 h-7"
+              >Login</a
+            >
+            <a
+              class="hidden md:block font-sora btn bg-[#FFDC26] w-23 h-7 pt-0.5"
+              >Register</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <section
+        class="lg:w-330 mx-auto md:flex felx-col justify-start p-4 md:p-0"
+      >
+        <div class="z-1 lg:space-y-7 lg:mt-20 space-y-3">
+          <h1 class="font-adlam lg:text-4xl text-2xl">
+            Pamper Your Pet,<br />Because They Deserve <br />
+            the Best
+          </h1>
+          <p class="font-sora text-gray-400 lg:text-lg text-sm">
+            Discover a world of treats, toys, and essentials handpicked for
+            <br />your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="btn bg-[#FFDC26] w-25 h-8">Find a pet</button>
+        </div>
+        <div class="absolute -z-1 md:-top-4 top-65">
+          <img
+            src="./Resources/assets/cat-big.png"
+            alt=""
+            class="w-200 lg:w-330"
+          />
+        </div>
+      </section>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- browse section -->
+      <section
+        class="absolute lg:top-200 top-120 p-4 w-auto md:left-40 left-2.5"
+      >
+        <h1 class="font-adlam mb-6 text-2xl lg:pl-35">Browse By Categories</h1>
+        <div
+          class="grid lg:grid-cols-6 md:gap-4 md:grid-cols-3 grid-cols-2 gap-4 lg:ml-35"
+        >
+          <!-- image-->
+          <div
+            class="h-50 w-40 bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="h-20 w-20 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./Resources/assets/dog-cartoon.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="font-adlam pt-4">DOG</div>
+            <div>3 Item</div>
+          </div>
+
+          <!-- image-->
+          <div
+            class="h-50 w-40 bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="h-20 w-20 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./Resources/assets/fish-cartoon.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="font-adlam pt-4">Fish</div>
+            <div>3 Item</div>
+          </div>
+
+          <!-- image-->
+          <div
+            class="h-50 w-40 bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="h-20 w-20 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./Resources/assets/cat-cartoon.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="font-adlam pt-4">Cat</div>
+            <div>3 Item</div>
+          </div>
+
+          <!-- image-->
+          <div
+            class="h-50 w-40 bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="h-20 w-20 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./Resources/assets/bird-cartoon.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="font-adlam pt-4">Birds</div>
+            <div>3 Item</div>
+          </div>
+
+          <!-- image-->
+          <div
+            class="h-50 w-40 bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="h-20 w-20 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./Resources/assets/mouse-cartoon.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="font-adlam pt-4">Small Pet</div>
+            <div>3 Item</div>
+          </div>
+
+          <!-- image-->
+          <div
+            class="h-50 w-40 bg-[#F9DF8A] rounded-xl flex flex-col items-center justify-center"
+          >
+            <div
+              class="h-20 w-20 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./Resources/assets/rabbit-cartoon.png" alt="" />
+            </div>
+            <!-- text -->
+            <div class="font-adlam pt-4">Rabit</div>
+            <div>3 Item</div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="absolute lg:top-300 md:top-255 top-310 bg-[#FFF9F4] h-194 w-full"
+      >
+
+      <div class="font-adlam text-2xl">Trending Pet Products</div>
+      <div>
+        
+      </div>
+
+    </section>
+    </main>
+  </body>
+</html>
