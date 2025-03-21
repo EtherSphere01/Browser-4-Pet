@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/69a195f5ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              sora: ["Sora", "sans-serif"],
+              adlam: ["ADLaM Display", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Browse 4 Pet</title>
+  </head>
+  <body>
+    <div class="grid grid-cols-4 grid-rows-3 gap-4 h-100 w-300">
+      <div class="bg-red-200 row-start-1 row-end-4">box1</div>
+      <div class="bg-red-200">box2</div>
+      <div class="bg-red-200">box3</div>
+      <div class="bg-red-200">box4</div>
+      <div class="bg-red-200">box5</div>
+      <div class="bg-red-200">box6</div>
+      <div class="bg-red-200">box7</div>
+      <div class="bg-red-200">box8</div>
+      <div class="bg-red-200">box9</div>
+      <div class="bg-red-200">box10</div>
+    </div>
+  </body>
+</html>
